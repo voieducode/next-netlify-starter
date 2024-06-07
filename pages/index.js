@@ -2,6 +2,9 @@ import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 
+import HubSpotScheduler from "../components/HubSpotScheduler";
+
+
 export default function Home() {
   return (
     <div className="container">
@@ -11,10 +14,14 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
+        <Header title="Bienvenue sur la page de test Hubspot" />
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          Bookez une visio avec moi!
         </p>
+
+        <h2>Schedule a Meeting</h2>
+        <HubSpotScheduler />
+
       </main>
 
       <Footer />
